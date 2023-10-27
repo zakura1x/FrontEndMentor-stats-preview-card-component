@@ -3,45 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Stats preview card component | Zakura1x</title>
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="output.css">
+  <title>Zakura1x</title>
 </head>
-<body>
-
-  <main>
-    <div class="container">
-      <div class="card-1">
-        <div class="content">
-          <h2>Get insights that help your business grow.</h2>
-          <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-        </div>
-
-        <div class="attributes">
-
-          <div class="attribute-content">
-            <h3>10k+</h3>
-            <p>companies</p>
+<body class="bg-accent1 font-body">
+  <main id="item" class="flex justify-center md:w-screen md:h-screen items-center">
+    <!-- Hero Section -->
+    <div class="bg-accent2 rounded-md flex flex-col-reverse overflow-hidden m-5 align-middle lg:flex-row lg:w-1/2">
+      
+      <div class="flex flex-col p-5 space-y-7 text-center justify-center lg:text-start lg:px-10 lg:p-2">
+          <h2 class="text-3xl font-bold text-white lg:pr-20">Get <span class="text-accent3">insights</span> that help your business grow.</h2>
+          <!-- Content -->
+          <p class="text-Twhite2 text-sm leading-6 lg:mr-12">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <!-- Status -->
+        <div class="container flex flex-col space-y-3  justify-center lg:space-y-0 lg:flex-row lg:mr-12">
+          <!-- First Item -->
+          <div class="container flex flex-col">
+            <h2 class="text-white font-bold text-xl">10k+</h2>
+            <p class="text-Twhite2 text-xs">COMPANIES</p>
+          </div>
+          <!-- Second Item -->
+          <div class="container flex flex-col">
+            <h2 class="text-white font-bold text-xl">314</h2>
+            <p class="text-Twhite2 text-xs">TEMPLATES</p>
+          </div>
+          <!-- Third Item -->
+          <div class="container flex flex-col">
+            <h2 class="text-white font-bold text-xl">12M+</h2>
+            <p class="text-Twhite2 text-xs">QUERIES</p>
           </div>
 
-          <div class="attribute-content">
-            <h3>314</h3>
-            <p>templates</p>
-          </div>
-
-          <div class="attribute-content">
-            <h3>12m+</h3>
-            <p>queries</p>
-          </div>
-          
         </div>
       </div>
-      <div class="card-2">
-        <img src="images/image-header-desktop.jpg" alt="Header Picture">
+
+      <!-- Right Item -->
+      <div class="container opacity-80">
+          <img src="images/image-header-desktop.jpg" alt="Pic" class="w-full h-full">
       </div>
     </div>
+
   </main>
-
-
+  
 </body>
 </html>
